@@ -1,0 +1,41 @@
+.header {
+  .flex;
+  .space-between;
+  position: relative;
+  .z-index;
+  height: 4rem;
+  .black-bg;
+  .shadow;
+  .snow-text;
+
+  &__title {
+    margin: 0;
+    .padded-large;
+    .line-height-large;
+  }
+
+  &__container {
+    .flex;
+    .space-between;
+    align-items: center;
+
+    &-button {
+      height: 100%;
+      .margin-right;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__list {
+    .list;
+    .flex;
+    flex-direction: column;
+    padding-top: 3px;
+    padding-left: @gap;
+    .padding-right;
+    font-size: 10px;
+  }
+}

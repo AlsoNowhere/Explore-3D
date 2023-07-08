@@ -1,0 +1,52 @@
+button,
+.button {
+  .height;
+  border: 5px solid #fff;
+  background-color: transparent;
+  box-shadow: none;
+  line-height: calc(2rem - 10px);
+  .snow-text;
+  .transition;
+  cursor: pointer;
+
+  &:hover {
+    .snow-bg;
+    .orange-text;
+  }
+
+  &.large {
+    height: 4rem;
+    line-height: calc(4rem - 10px);
+    font-size: 2rem;
+  }
+
+  &.green {
+    border-color: @apple;
+    color: @apple;
+  }
+
+  &.orange {
+    border-color: @orange;
+    color: @orange;
+  }
+
+  &.red {
+    border-color: @tomato;
+    color: @tomato;
+  }
+
+  &.black {
+    border-color: @black;
+    color: @black;
+
+    &:hover {
+      background-color: @black;
+      .orange-text;
+    }
+  }
+
+  &.complete {
+    border-color: @apple;
+    .apple-text;
+  }
+}
