@@ -1,0 +1,42 @@
+.menu-page {
+  .flex;
+  .constrain;
+  .centred;
+  .snow-text;
+
+  &__title {
+    width: 100%;
+  }
+
+  &__buttons {
+    width: 100%;
+  }
+
+  &__levels {
+    .flex;
+    width: calc(100% * 5 / 8);
+
+    &-list {
+      .list;
+      .flex;
+      width: 100%;
+    }
+
+    &-level {
+      width: calc((100% / 7) - (@size / 2) + (1rem / 7));
+      .margin-right;
+      .margin-bottom;
+
+      &:nth-child(7n) {
+        margin-right: 0;
+      }
+
+      button,
+      button.large {
+        width: 100%;
+        padding: 0;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
